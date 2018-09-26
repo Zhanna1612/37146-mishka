@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Жанна Емельянова](https://up.htmlacademy.ru/adaptive/15/user/37146).
-* Наставник: `Неизвестно`.
+* Наставник: Артём Альтигин (https://htmlacademy.ru/profile/artem).
 
 ---
 
