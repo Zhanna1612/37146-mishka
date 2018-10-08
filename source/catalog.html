@@ -4,29 +4,30 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-image" src="http://placehold.it/150x100" width="86" height="35" alt="Мишка">
+    <a class="page-header__link" href="index.html">
+      <img class="page-header__logo" src="http://placehold.it/150x100" width="86" height="35" alt="Мишка">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <button class="main-nav__hamburger" type="button">Открыть меню</button>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a href="catalog.html">Каталог товаров</a></li>
-          <li class="site-list__item"><a href="form.html">Вязание на заказ</a></li>
-          <li class="site-list__item"><a href="#">Поиск по сайту</a></li>
-          <li class="site-list__item"><a href="#">Корзина: пока пуста</a></li>
+        <ul class="link-lists">
+          <li class="link-lists__item"><a href="catalog.html">Каталог товаров</a></li>
+          <li class="link-lists__item"><a href="form.html">Вязание на заказ</a></li>
+          <li class="link-lists__item"><a href="#">Поиск по сайту</a></li>
+          <li class="link-lists__item"><a href="#">Корзина: пока пуста</a></li>
         </ul>
       </div>
     </nav>
   </header>
 
-  <main class="page-catalog">
+  <main class="page-main">
 
-    <h1 class="page-catalog__title">Каталог товаров</h1>
+    <h1 class="titleh1">Каталог товаров</h1>
 
     <section class="products">
       <ul class="products__list">
@@ -64,13 +65,13 @@
       <h2 class="production__title">Процесс производства</h2>
       <img class="production__img" src="http://placehold.it/150x100" width="260" height="151" alt="Производство товаров">
       <p class="production__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-      <button class="production__button button" type="button">Сделать заказ</button>
+      <button class="button" type="button">Сделать заказ</button>
     </section>
 
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__social social">
+    <div class="social">
       <ul class="social__list">
         <li class="social__item">
           <a class="social__link social__link--insta" href="#">Инстаграмм</a>
@@ -83,7 +84,7 @@
         </li>
       </ul>
     </div>
-    <div class="page-footer__copyright copyright">
+    <div class="copyright">
       <p class="copyright__text">Разработано:</p>
       <a class="copyright__link" href="#">
           <img class="copyright__img" src="http://placehold.it/150x100" width="26" height="34" alt="HTMLAcademy">
