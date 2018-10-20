@@ -1,6 +1,10 @@
 .main-nav {
   display: flex;
   justify-content: flex-end;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
 }
 
 .main-nav__hamburger {
@@ -9,8 +13,8 @@
   margin: 32px 30px;
   background: url("../img/icon-menu-open.svg") no-repeat center;
   border: none;
-}
 
-.main-nav__wrapper {
-  display: none;
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }

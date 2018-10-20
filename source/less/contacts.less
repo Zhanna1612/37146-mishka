@@ -1,19 +1,46 @@
+.contacts {
+  button {
+    display: block;
+    width: auto;
+    margin: 55px auto;
+  }
+}
+
 .contacts__title {
   padding: 30px 30px 10px;
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
   color: #000000;
+
+  @media (min-width: @tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
 }
 
 .contacts__list {
   .list-none();
   padding: 0 30px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
 }
 
 .contacts__item {
   padding: 0 0 20px;
   line-height: 30px;
+
+  @media (min-width: @tablet-width) {
+    width: 50%;
+    box-sizing: border-box;
+    display: flex;
+
+    span:last-child {
+      margin: 0 0 0 40px;
+    }
+  }
 }
 
 .contacts__map {

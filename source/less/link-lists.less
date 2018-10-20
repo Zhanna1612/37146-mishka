@@ -1,6 +1,29 @@
 .link-lists {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.link-lists__products {
   .list-none();
   font-weight: bold;
+  @media (min-width: @tablet-width) {
+    display: flex;
+    margin: 0 50px;
+  }
+}
+
+.link-lists__search-basket {
+  .list-none();
+  font-weight: bold;
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 50px;
+  }
 }
 
 .link-lists__item {
@@ -14,5 +37,25 @@
 
   &:last-child {
     border-bottom: 1px solid #ececec;
+    @media (min-width: @tablet-width) {
+      border: none;
+    }
+  }
+  @media (min-width: @tablet-width) {
+    width: 167px;
+    border: none;
+
+    &--search {
+      width: 84px;
+
+      span {
+        display: none;
+      }
+    }
+
+    &--basket {
+      width: 265px;
+      text-align: right;
+    }
   }
 }
