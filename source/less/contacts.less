@@ -1,8 +1,16 @@
-.contacts {
+ .contacts {
   button {
     display: block;
     width: auto;
     margin: 55px auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-between;
   }
 }
 
@@ -17,6 +25,10 @@
     font-size: 43px;
     line-height: 50px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 30px 0 10px 235px;
+  }
 }
 
 .contacts__list {
@@ -25,6 +37,11 @@
 
   @media (min-width: @tablet-width) {
     display: flex;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: column;
+    padding: 0 0 0 235px;
   }
 }
 
@@ -41,9 +58,20 @@
       margin: 0 0 0 40px;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    span:last-child {
+      margin-left: 20px;
+    }
+  }
 }
 
 .contacts__map {
   width: 100%;
   padding: 40px 0 10px;
+
+  @media (min-width: @desktop-width) {
+    order: 1;
+    width: 525px;
+  }
 }

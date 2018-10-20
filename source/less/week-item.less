@@ -5,6 +5,10 @@
     padding: 0 50px;
   }
 
+  @media (min-width: @desktop-width) {
+    padding: 0 100px;
+  }
+
   .titleh2 {
     margin: 0;
     padding: 30px 0 4px;
@@ -22,6 +26,11 @@
     justify-content: space-between;
     align-items: center;
   }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
 }
 
 .week-item__addition {
@@ -32,6 +41,13 @@
   line-height: 20px;
   color: #63d1bb;
   text-transform: uppercase;
+
+  @media (min-width: @desktop-width) {
+    box-sizing: border-box;
+    width: 145px;
+    padding: 30px 30px 0;
+    text-align: center;
+  }
 }
 
 .week-item__wrapper {
@@ -46,6 +62,10 @@
     width: 50%;
     box-sizing: border-box;
     padding-right: 44px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 160px 60px 0 144px;
   }
 }
 
@@ -78,6 +98,12 @@
 .week-item__order {
   @media (min-width: @tablet-width) {
     margin-top: -136px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 290px;
+    margin-top: -136px;
+    margin-left: 144px;
   }
 }
 
