@@ -1,11 +1,12 @@
 .page-header {
   width: 320px;
-  height: 80px;
+  min-height: 395px;
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
     width: @tablet-width;
     position: relative;
+    min-height: 80px;
   }
 
   @media (min-width: @desktop-width) {
@@ -22,7 +23,7 @@
     left: 50px;
   }
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @desktop-width) {
     left: calc(50% - 43px);
   }
 }

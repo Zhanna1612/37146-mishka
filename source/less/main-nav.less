@@ -1,6 +1,6 @@
 .main-nav {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
 
   @media (min-width: @tablet-width) {
     display: block;
@@ -8,13 +8,31 @@
 }
 
 .main-nav__hamburger {
-  width: 20px;
-  height: 14px;
+  align-self: flex-end;
+  width: 21px;
+  height: 21px;
   margin: 32px 30px;
-  background: url("../img/icon-menu-open.svg") no-repeat center;
   border: none;
+  background-color: #ffffff;
+  cursor: pointer;
 
   @media (min-width: @tablet-width) {
     display: none;
   }
+}
+
+.main-nav--open .link-lists {
+  display: none;
+}
+
+.main-nav--close .main-nav__hamburger {
+  background: #ffffff url("../img/icon-menu-close.svg") no-repeat center;
+}
+
+.main-nav--open .main-nav__hamburger {
+  background: #ffffff url("../img/icon-menu-open.svg") no-repeat center;
+}
+
+.main-nav--nojs .link-lists {
+  display: none;
 }
