@@ -4,15 +4,28 @@
   font-weight: bold;
   font-size: 27px;
   line-height: 30px;
+  color: #000000;
   text-align: center;
 
   &--catalog {
-    background-color: #f1f1f1;
+    background-color: @bg-lightgrey;
     padding: 72px 30px;
+
+    @media (min-width: @tablet-width) {
+      font-size: 43px;
+      line-height: 50px;
+      padding: 100px auto 72px;
+    }
   }
 
   &--form {
-    background-color: #f1f1f1;
+    background-color: @bg-lightgrey;
     padding: 72px 30px;
+
+    @media (min-width: @tablet-width) {
+      font-size: 43px;
+      line-height: 50px;
+      padding: 100px auto 72px;
+    }
   }
 }

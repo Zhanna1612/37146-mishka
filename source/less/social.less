@@ -9,4 +9,16 @@
   display: flex;
   justify-content: space-around;
   align-items: baseline;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+  }
+}
+
+.social__link {
+  &--facebook {
+    @media (min-width: @tablet-width) {
+      margin: 0 35px;
+    }
+  }
 }

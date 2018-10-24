@@ -1,9 +1,35 @@
 .week-item {
   padding: 0 30px;
 
+  @media (min-width: @tablet-width) {
+    padding: 0 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 100px;
+  }
+
   .titleh2 {
     margin: 0;
     padding: 30px 0 4px;
+
+    @media (min-width: @tablet-width) {
+      font-size: 43px;
+      line-height: 50px;
+    }
+  }
+}
+
+.week-item__title {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
   }
 }
 
@@ -15,14 +41,37 @@
   line-height: 20px;
   color: #63d1bb;
   text-transform: uppercase;
+
+  @media (min-width: @desktop-width) {
+    box-sizing: border-box;
+    width: 145px;
+    padding: 30px 30px 0;
+    text-align: center;
+  }
+}
+
+.week-item__wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .week-item__description {
+  @media (min-width: @tablet-width) {
+    width: 50%;
+    box-sizing: border-box;
+    padding-right: 44px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 160px 60px 0 144px;
+  }
+}
+
+.week-item__text {
   margin: 0;
   padding: 28px 0 18px;
-  font-size: 15px;
-  line-height: 24px;
-  color: #444444;
 }
 
 .week-item__list {
@@ -32,15 +81,30 @@
 .week-item__feature {
   margin: 0;
   padding: 12px 0;
-  font-size: 15px;
-  line-height: 24px;
-  color: #444444;
   border-bottom: 1px solid #ececec;
 }
 
 .week-item__img {
+  width: 100%;
   padding: 30px 0 20px;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    box-sizing: border-box;
+    width: 50%;
+  }
+}
+
+.week-item__order {
+  @media (min-width: @tablet-width) {
+    margin-top: -136px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 290px;
+    margin-top: -136px;
+    margin-left: 144px;
+  }
 }
 
 .week-item__price {
@@ -48,7 +112,4 @@
   padding: 0;
   text-align: center;
   font-weight: bold;
-  font-size: 17px;
-  line-height: 24px;
-  color: #444444;
 }
